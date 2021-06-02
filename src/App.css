@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  background-color: rgb(24, 18, 18);
+}
+body{
+  background-color: black;
+}
+
+/* .fvideo{
+  z-index: -1;
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  
+} */
+/* .container{
+  position: absolute;
+  z-index: 1;
+  width:100%;
+  height:100vh;
+  
+  text-align:center;
+} */
+.recipe{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.rcontain{
+  margin: 1vh;
+  padding: 0vh;
+  background-color: white;
+  height: 60vh;
+  width: 70%;
+  overflow: scroll;
+}
