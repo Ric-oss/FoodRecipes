@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/FoodRecipes/static/css/main.496a908e.chunk.css",
+    "main.js": "/FoodRecipes/static/js/main.c7b5a717.chunk.js",
+    "main.js.map": "/FoodRecipes/static/js/main.c7b5a717.chunk.js.map",
+    "runtime-main.js": "/FoodRecipes/static/js/runtime-main.ee32e802.js",
+    "runtime-main.js.map": "/FoodRecipes/static/js/runtime-main.ee32e802.js.map",
+    "static/js/2.8c8fe3d1.chunk.js": "/FoodRecipes/static/js/2.8c8fe3d1.chunk.js",
+    "static/js/2.8c8fe3d1.chunk.js.map": "/FoodRecipes/static/js/2.8c8fe3d1.chunk.js.map",
+    "static/js/3.52caee88.chunk.js": "/FoodRecipes/static/js/3.52caee88.chunk.js",
+    "static/js/3.52caee88.chunk.js.map": "/FoodRecipes/static/js/3.52caee88.chunk.js.map",
+    "index.html": "/FoodRecipes/index.html",
+    "static/css/main.496a908e.chunk.css.map": "/FoodRecipes/static/css/main.496a908e.chunk.css.map",
+    "static/js/2.8c8fe3d1.chunk.js.LICENSE.txt": "/FoodRecipes/static/js/2.8c8fe3d1.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/FoodRecipes/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee32e802.js",
+    "static/js/2.8c8fe3d1.chunk.js",
+    "static/css/main.496a908e.chunk.css",
+    "static/js/main.c7b5a717.chunk.js"
+  ]
+}
