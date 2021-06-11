@@ -1,22 +1,27 @@
-import React from 'react';
+import React,{useState} from 'react';
+import Popup  from './Popup.js';
+import './Recipe.css'
+function Recipe(props){
+  
+    const[popup,setPopup]=useState(false);
+     
+    const click=()=>{
+        setPopup(true);
+    }
+   const closePops=()=>{
+    setPopup(false)
+   }
 
-function recipe(props){
     return(
-        <div className="rcontain">
-        <h1>{props.title}</h1>
-        <img src={props.image} alt=""/>
-     <ol>
-         {props.ingredients.map(ingredient=>(
-             <li>{ingredient.text}</li>
-         ))
+        <div>
 
-         }
-     </ol>
-     <p>{props.calories}</p>
-
+          <div style={{backgroundImage: `url(${props.image})`,backgroundSize:"cover",backgroundPosition: "center"}} className="rcontain" onClick={click}></div>
+                    {/* <button type="button" onClick={click} className="button">Recipe</button>*/}
+             
+             {popup?<Popup title={props.title} ingredients ={props.ingredients} calories={props.calories} closePops={closePops}/>:""}
      
         </div>
         
     )
 }
-export default recipe;
+export default Recipe;

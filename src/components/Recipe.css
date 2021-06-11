@@ -1,0 +1,22 @@
+.rcontain{
+  margin: 1vh;
+  padding: 0vh;
+  height: auto;
+  border-radius: 20rem;
+
+  width: 90%;
+    min-height: 20rem;
+}
+/* .heading{
+    padding: 0 1rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background:rgba(255,255,255,.2);
+}
+.calories{
+    font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+    background:rgba(255,255,255,.2);
+} */
+

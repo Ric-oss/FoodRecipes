@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import Recipe from './components/recipe';
+import Header from './components/Header.js'
 
 function App() {
   const [lists, setlist] = useState([]);
@@ -42,18 +43,16 @@ function App() {
 
 
 
-
+console.log("hello")
 
   return (
-    <div>
-
-      <div className="container">
-        <form onSubmit={submit}>
-          <input type="text" value={search} onChange={getdata} />
-          <button type="submit" onClick={submit}>Search</button>
-        </form>
-
+    <>
+    <div className="header">
+      <Header value={search} getdata={getdata} submit={submit}/>
+      </div>
+      
         <div className="recipe">
+
           {lists.map((recipe) => {
             return (
               <Recipe
@@ -68,10 +67,7 @@ function App() {
           })
           }
         </div>
-
-      </div>
-
-    </div>
+    </>
   )
 
 }

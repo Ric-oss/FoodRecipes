@@ -1,0 +1,20 @@
+.popup{
+    background-color:whitesmoke;
+    position: fixed;
+    padding:2rem 2rem;
+    width: auto;
+    top: 4rem;
+    left: 10rem;
+    height: auto;
+    border-radius: 4rem;
+    z-index: 50;
+}
+.popup--close{
+    background-color: grey;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,22 @@
+.header{
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: fixed;
+  top: 0;
+  padding-right: 40%;
+
+}
+.input{
+     
+     border: none;
+     border-bottom-left-radius: 30px;
+     border-top-left-radius: 30px;
+     outline: none;
+}
+.button{
+    border: none;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    cursor: pointer;
+    outline: none;
+}
