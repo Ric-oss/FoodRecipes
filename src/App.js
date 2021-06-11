@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import Recipe from './components/recipe';
@@ -10,7 +10,7 @@ function App() {
   const [query, setQuery] = useState("");
 
   useEffect(()=>{
-    console.log("useeffect");
+    
     setdata()
   },[query])
 
@@ -53,10 +53,12 @@ function App() {
       
         <div className="recipe">
 
-          {lists.map((recipe) => {
+          {lists.map((recipe,i) => {
             return (
               <Recipe
-                key={recipe.recipe.label}
+                key={i}
+                keys={i}
+                // key={recipe.recipe.label}
                 title={recipe.recipe.label}
                 calories={recipe.recipe.calories}
                 image={recipe.recipe.image}

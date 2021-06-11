@@ -13,8 +13,8 @@ function Recipe(props){
    }
 
     return(
-        <div>
-
+        <div key={props.keys}>
+           
           <div style={{backgroundImage: `url(${props.image})`,backgroundSize:"cover",backgroundPosition: "center"}} className="rcontain" onClick={click}></div>
                     {/* <button type="button" onClick={click} className="button">Recipe</button>*/}
              

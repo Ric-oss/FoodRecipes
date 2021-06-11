@@ -8,8 +8,8 @@ const Popup=(props)=>{
        <h2>{props.title}</h2>
        <h4><span>Calories:</span> {props.calories}</h4>
        <ol>
-         {props.ingredients.map(ingredient=>(
-             <li style={{color:"black"}}>{ingredient.text}</li>
+         {props.ingredients.map((ingredient,i)=>(
+             <li key={i} style={{color:"black"}}>{ingredient.text}</li>
          ))
 
          }
