@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 const Header=(props)=>{
-    console.log("Header")
+    
  return(
      
     <header className="header">
