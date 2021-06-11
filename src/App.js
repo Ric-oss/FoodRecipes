@@ -10,8 +10,17 @@ function App() {
   const [query, setQuery] = useState("");
 
   useEffect(()=>{
+    console.log("fetching data from apis")
+    // this.setState({ query: this.state.search })
+    const App_id = 'cdaaf1d1'
+    const App_key = '5f3035d5705cae5677366736fd53fff1'
+    fetch(`https://api.edamam.com/search?q=${query}&app_id=${App_id}&app_key=${App_key}`)
+      .then(res => {
+        return res.json();
+      }).then(data => {
+        setlist(data.hits);
+      })
     
-    setdata()
   },[query])
 
   const getdata = (e) => {
@@ -28,18 +37,18 @@ function App() {
   }
 
 
-  const setdata = () => {
-    console.log("fetching data from apis")
-    // this.setState({ query: this.state.search })
-    const App_id = 'cdaaf1d1'
-    const App_key = '5f3035d5705cae5677366736fd53fff1'
-    fetch(`https://api.edamam.com/search?q=${query}&app_id=${App_id}&app_key=${App_key}`)
-      .then(res => {
-        return res.json();
-      }).then(data => {
-        setlist(data.hits);
-      })
-  }
+  // const setdata = () => {
+  //   console.log("fetching data from apis")
+  //   // this.setState({ query: this.state.search })
+  //   const App_id = 'cdaaf1d1'
+  //   const App_key = '5f3035d5705cae5677366736fd53fff1'
+  //   fetch(`https://api.edamam.com/search?q=${query}&app_id=${App_id}&app_key=${App_key}`)
+  //     .then(res => {
+  //       return res.json();
+  //     }).then(data => {
+  //       setlist(data.hits);
+  //     })
+  //}
 
 
 
